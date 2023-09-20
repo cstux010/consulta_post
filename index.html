@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Posts</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <section>
+        <div id="dado">
+                <h1 id="cabecalho"><strong>Busca Post</strong></h1>
+            <select name="opc" id="opc">
+                <option value="none"></option>
+                <option value="uid">User ID</option>
+                <option value="pid">Post ID</option>
+                <option value="titulo">Title</option>
+                <option value="conteudo">Body</option>
+            </select>
+            <input type="text" name="busca" id="busca">
+            <br>
+            <br>
+            <input type="button" value="Consultar" id="bttn1" onclick="pesquisapost()">
+            <input type="button" value="Limpar" id="bttn2" onclick="limpar()">
+            <br>        
+            <br>
+            <footer>Made by: Carolina Koike</footer>
+        </div>
+        
+        <div id="res" style="display: none">
+            <ul id="resposta" type="circle" >
+            </ul>
+        </div>
+        <br>
+        
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
